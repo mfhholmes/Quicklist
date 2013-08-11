@@ -1,0 +1,160 @@
+@font-face
+{
+  font-family: titleFont;
+  src: url('chrome-extension://__MSG_@@extension_id__/CantoraOne-Regular.ttf');
+}
+@font-face
+{
+  font-family: itemFont;
+  src: url('chrome-extension://__MSG_@@extension_id__/Fresca-Regular.ttf');
+}
+
+.background{
+  background-color:#c15f45;
+  color:white;
+  border-color:#cf806a;
+}
+.lowlight{
+  background-color:#9e4c35;
+  color:white;
+  border-color:#cf806a;
+}
+html{
+  width:250px;
+  min-height:400px;
+  border:0;
+}
+body{
+  width:100%;
+  margin:0;
+  padding:0;
+  border:0;
+}
+#container{
+  margin:0;
+  padding:5px;
+}
+#viewport{
+  width:100%;
+  margin:0;
+  padding:0;
+  height:auto;
+}
+#listLogo{
+	width:48px;
+	height:48px;
+	margin-left:10px;
+	margin-top:8px;
+	float:left;
+}
+#listTitle{
+  font-family: titleFont, serif;
+  font-size:2.5em;
+  text-align:center;
+  margin:10px;
+  padding:0;
+}
+.quickList{
+  width:195px%;
+  padding:5px;
+  padding-bottom:0px;
+  padding-top:0px;
+}
+.todoItem{
+  width:95%;
+  padding:5px;
+  box-sizing:border-box;
+}
+.itemTitle{
+  margin-left:10px;
+  font-size:15px;
+  line-height:25px;
+  vertical-align:top;
+  font-family:titleFont;
+}
+.bookmark{
+  text-decoration:underline;
+  cursor:pointer;
+}
+.itemDesc{
+  display:block;
+  margin-left:35px;
+  font-size:12px;
+  font-family:itemFont;
+}
+
+#newItemForm{
+  position:absolute;
+  z-index:100;
+  top:20px;
+  left:20px;
+  height:320px;
+  right:20px;
+  border-style:solid;
+  border-width:2px;
+  border-radius:2px;
+  padding:20px;
+  font-family:itemFont;
+}
+.formField{
+  width:100%;
+  border:0;
+  font-family:itemFont;
+}
+#itemTitle{
+  font-weight:bold;
+  font-size:1.1em;
+  line-height:1.3em;
+}
+.complete{
+  text-decoration:line-through;
+}
+.checkBookmark{
+  font-size:1em;
+  margin-top:10px;
+}
+textarea{
+  resize:none;
+  height:150px;
+}
+label{
+  width:100%;
+  font-size:1em;
+  line-height:1.5em;
+  margin-top:5px;
+}
+.priorityOption{
+
+}
+h3{
+  margin:0 0 10px 0;
+  text-align:center;
+  padding:0;
+}
+#addNewItem{
+  margin-left:50px;
+  padding:0;
+  height:32px;
+  width:150px;
+  font-family:itemFont;
+  border-style:solid;
+  border-width:2px;
+  border-radius:2px;
+  font-weight:bold;
+  font-size:20px;
+  cursor:pointer;
+}
+#confirmNewItem{
+  margin-top:5px;
+  margin-bottom:10px;
+  padding:0;
+  height:32px;
+  width:100px;
+  font-family:itemFont;
+  border-style:solid;
+  border-width:2px;
+  border-radius:2px;
+  font-weight:bold;
+  font-size:20px;
+  cursor:pointer
+}

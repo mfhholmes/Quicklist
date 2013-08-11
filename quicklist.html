@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quicklist</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="quicklist.css">
+</head>
+<body class="lowlight">
+  <div id="container">
+		<img id="listLogo" src="logo.svg"></img>
+    <h2 id="listTitle">Quicklist</h2>
+    <button id="addNewItem" class="background">Add New Thing</button>
+    <div id="viewport">
+      <ul class="quickList" id="quickList">
+      </ul>
+    </div>
+  </div>
+  <div id="newItemForm" style="display:none" class="background">
+    <h3 class="itemHeader">New Thing</h3>
+    <label for="itemTitle">Name?</label>
+    <input type="text" class="formField" id="itemTitle"/>
+    <label for="checkBookmark" >Link to this page?</label>
+    <input type="checkbox" class="checkBookmark" id="checkBookmark"/>    <label for="itemDesc">Description?</label>
+    <textarea class="formField" id="itemDesc"></textarea>
+    <button id="confirmNewItem" class="lowlight">Confirm</button>
+  </div>
+  <script src="quicklist.js" type="text/javascript"></script>
+</body>
+</html>
